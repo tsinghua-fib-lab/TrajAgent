@@ -1,0 +1,15 @@
+{
+    "loc_emb_size": 500,
+    "uid_emb_size": 40,
+    "tim_emb_size": 10,
+    "hidden_size": 500,
+    "attn_type": "dot",
+    "rnn_type": "LSTM",
+    "dropout_p": 0.5,
+    "learning_rate": 0.001,
+    "lr_step": 3,
+    "max_epoch": 30,
+    "optimizer": "adam",
+    "window_size": 72,
+    "cut_method":"time_interval"
+}

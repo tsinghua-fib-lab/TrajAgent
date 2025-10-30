@@ -1,0 +1,7 @@
+{
+  "C": 8,
+  "k": 4,
+  "E_U": 256,
+  "lr": 0.001,
+  "load_balancing_weight": 0.05
+} 

@@ -1,0 +1,9 @@
+{"poi-embed-dim":128,
+"user-embed-dim":128, 
+"time-embed-dim":32, 
+"cat-embed-dim":32,
+"batch":20, 
+"lr":0.001,
+"transformer-dropout":0.3,
+"weight_decay":5e-4
+}

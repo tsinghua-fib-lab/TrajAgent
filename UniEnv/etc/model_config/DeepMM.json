@@ -1,0 +1,8 @@
+
+{
+    "lrate": 0.001,
+    "dim_loc_src": 256,
+    "n_layers_src": 2, 
+    "n_layers_trg": 1, 
+    "batch_size": 128   
+}

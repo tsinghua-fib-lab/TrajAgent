@@ -1,0 +1,21 @@
+ase==3.22.1
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+cycler==0.11.0
+Cython==0.29.33
+h5py==3.8.0
+kiwisolver==1.4.5
+llvmlite==0.39.1
+matplotlib==3.5.3
+numba==0.56.4
+numpy==1.21.5
+pandas==1.2.3
+pickle5==0.0.12
+Pillow==9.5.0
+python-louvain==0.16
+torch==1.8.1
+torch-cluster==1.5.9
+torch-geometric==1.7.0
+torch-scatter==2.0.7
+torch-sparse==0.6.9
+torch-spline-conv==1.2.1
+typing_extensions==4.7.1

@@ -1,0 +1,6 @@
+{
+"trans_attention_head" :2,
+"trans_attention_dropout":0.1,
+"trans_attention_layer":2,
+"embedding_dim": 128
+}

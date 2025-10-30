@@ -1,0 +1,6 @@
+{"spatio": 500,       
+"temporal": 5,
+"hidden_size": 32,
+"dropout": 0.1,
+"lr": 1e-3, 
+"batch_size": 64}

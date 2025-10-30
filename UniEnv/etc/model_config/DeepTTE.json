@@ -1,0 +1,1 @@
+{"kernel_size": 7, "num_filter": 128, "num_final_fcs": 3, "final_fc_size": 512}

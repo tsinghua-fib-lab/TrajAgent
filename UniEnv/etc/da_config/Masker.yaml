@@ -1,0 +1,5 @@
+mask_nums: 1
+mask_ratio: 0
+mask_time_sort: minimum
+mask_value: 1
+ti_mask_n_times: 1

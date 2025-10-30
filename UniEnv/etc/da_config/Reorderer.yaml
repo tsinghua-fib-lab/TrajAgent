@@ -1,0 +1,7 @@
+## Reorder
+reorder_nums: 2           # (int) the number of reordered items.
+reorder_ratio: 0          # (float) the ratio of reordered items.
+reorder_n_times: 2       # (int) the number of reorder for each sequence
+## Ti-reorder
+sub_seq_length: 5             # (int) the length of the cropped subsequence
+reorder_time_sort: "minimum"  # (str, choice in ["maximum", "minimum"]) see 'crop_time_sort'

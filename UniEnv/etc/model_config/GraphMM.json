@@ -1,0 +1,7 @@
+
+{
+    "tf_ratio": 0.5,
+    "emb_dim": 256,
+    "lr": 1e-4,
+    "batch_size": 32        
+}

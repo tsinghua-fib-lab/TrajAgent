@@ -1,0 +1,11 @@
+{
+    "input_dim": 110,
+    "seq_input_dim": 90,
+    "seq_hidden_dim": 128,
+    "seq_layer": 2,
+    "bert_hiden_size": 64,
+    "decoder_layer": 1,
+    "decode_head": 1,
+    "bert_hidden_layers":4,
+    "bert_attention_heads": 7
+  }

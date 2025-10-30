@@ -1,0 +1,10 @@
+{
+    "context_len": 6,
+    "history_len": 40,
+    "temperature": 0.01,
+    "max_new_tokens": 200,
+    "top_p": 0.95,
+    "top_k": 250,
+    "length_penalty": 1,
+    "presence_penalty": 0
+} 

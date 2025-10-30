@@ -1,0 +1,65 @@
+# All valid data augmentation methods would be formulated through the Cartesian product of 'augment_operation', 'pos_sample_method', and 'item_sample_method'.
+# General settings
+# augment_operation: ["cl4srec-mixed-all", "cl4srec-mixed-vanilla", "cl4srec-crop", "cl4srec-mask", "cl4srec-reorder", "subset-split", "crop", "insert", "delete", "mask", "reorder", "replace"]
+# Time-interval-aware operations
+# ti_operator_:[
+#     "Ti-insert",
+#     "Ti-delete",
+#     "Ti-crop",
+#     "Ti-mask",
+#     "Ti-reorder",
+#     "Ti-replace",
+#     "slide-window",
+#     "recbole-slide-window",
+#     "subset-split",
+# ]
+pos_sample_method: ["uniform"]
+# unvisited,random,memorybased (replace和insert需要)
+item_sample_method: ["memorybased"]
+pos: ["time"]
+
+start_pos: 0
+end_pos: -1
+
+# Others:
+need_item_sampling: ["insert", "replace", "Ti-insert", "Ti-replace"]
+
+# memory-based item sampling
+mb_model_name: "ItemCF_IUF"
+
+## Non-time-interval-aware method and time-interval-aware method shares the same configuration
+
+## Ti-overall-settings
+ti_threshold: 5
+
+## Similar-Item-Sampling [not implemented yet]
+## Note: It may be revised in the future.
+item_embeddings: "xxx.embeddings"   # the path of the pre-computed item embedding file.
+target_item: "X"                    # the item that is being used to compute the similarity.
+op: "inner_product"                 # the similarity measurement function with binary operators.
+
+# online
+online_dict_path: "configs/config_a_online_aug.yaml"
+
+# Additional tasks for benchmark
+# "CL4SRec", "DuoRec", "ELECRec",
+# ["CoSeRec", "CL4SRec", "ICLRec"]
+unique_task: ["SASRec"]
+
+# inject to model config
+# ablation_task_config: ~
+ablation_task_config: ~
+#  CL4SRec: ["all_enabled", "vanilla", "only_crop", "only_mask", "only_reorder", "only_insert", "only_delete", "only_replace", "only_subset_split"]
+
+# Model's settings.
+# models: ["SASRec", "CL4SRec", "DuoRec", "ELECRec", "ICLRec", "CoSeRec"]
+models: ["SASRec"]
+config_path: "reproductivity/configs"
+model_config:
+  SASRec: "config_m_SASRec.yaml"
+  CL4SRec: "config_m_CL4SRec.yaml"
+  DuoRec: "config_m_DuoRec.yaml"
+  ELECRec: "config_m_ELECRec.yaml"
+  ICLRec: "config_m_ICLRec.yaml"
+  CoSeRec: "config_m_CoSeRec.yaml"
+

@@ -1,0 +1,9 @@
+
+## Delete
+delete_nums: 1            # (int) the number of deleted items.
+delete_ratio: 0           # (float) the ratio of deleted items.
+delete_n_times: 2        # (int) the number of deletion for each sequence
+
+## Ti-delete [deprecated]
+delete_time_sort: "minimum"   # (str, choice in ["maximum", "minimum"]) choose the deletion position that has largest/smallest time interval
+ti_delete_n_times: 1          # (int)

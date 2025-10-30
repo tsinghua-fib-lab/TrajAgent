@@ -1,0 +1,1 @@
+{"batch_size": 32, "learning_rate": 0.001, "embed_size": 32, "num_layers": 3}
