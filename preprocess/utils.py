@@ -11,9 +11,8 @@ import math
 import numpy as np
 from math import sin, cos, asin, sqrt, radians
 
-from config_parser import CONFIG
-from config.settings import *
-from models.prompt import *
+from UniEnv.etc.settings import *
+from prompt_optimize.utils.prompt import *
 
 map_global = None
 
@@ -712,3 +711,10 @@ def get_cat_map(poi_cat_id, is_en):
         return MAP_CATEGORY_NUM_EN.get(poi_cat_head, None)  # 提供默认值以避免 KeyError
     else:
         return MAP_CATEGORY_NUM.get(poi_cat_head, None)  # 提供默认值以避免 KeyError
+
+def save_df_to_json_lines(df, output_filename):
+    with open(output_filename, 'w', encoding='utf-8') as f:
+        for _, row in df.iterrows():
+            row_dict = row.to_dict()
+            json_str = json.dumps(row_dict)
+            f.write(json_str + '\n')

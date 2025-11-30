@@ -32,7 +32,7 @@ class PlanAgent:
         The whole life cycle of {self.task} includes following modules:
         {MODULE_DESCRIPTION}
         """
-        prompt = prompt_head + prompt_mid + "Please choose between following choices:\n A.It is necessary to use data augmentation module singly.\nB. It is necessary to use data augmentation module singly.\nC. It is necessary to use two modules jointly.\nPlease choose the most suitable one among A, B, C as the answer to this question.Please output the option directly.  "
+        prompt = prompt_head + prompt_mid + "Please choose between following choices:\n A. It is necessary to use data augmentation module singly.\nB. It is necessary to use hyperparameter optimization module singly.\nC. It is necessary to use two modules jointly (data augmentation + hyperparameter optimization).\nPlease choose the most suitable one among A, B, C as the answer to this question.Please output the option directly.  "
         result = self.llm.get_response(prompt_text=prompt)
         choice = extract_choice(result, ['A','B','C'])
         return choice
